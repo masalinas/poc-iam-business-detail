@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "a0607d37-4ad2-4a9a-92b8-ea7e802e81c4",
+		"name": "Olive-Business-Detail",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getRecomendations",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI3ejBlZ25XU05qVldEenY3bmtZRGw3ekVyc3Zld2Q4c1FieEVuX2pTNFYwIn0.eyJleHAiOjE2Mzg4ODE1MTMsImlhdCI6MTYzODg4MTIxMywianRpIjoiMmRmYWVkMzktM2IyMy00MmIzLWEwMTQtYzc1NzJmYjNhMzlkIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL3BvYyIsImF1ZCI6WyJidXNpbmVzcy1hcGkiLCJidXNpbmVzcy1kZXRhaWwtYXBpIiwiYWNjb3VudCJdLCJzdWIiOiJiNzA1ODhiZC1kNjZmLTRjMTAtYTE4Yi1kMmM0MWQ0NTZiODIiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJhZG1pbi1hcGkiLCJzZXNzaW9uX3N0YXRlIjoiNDZiMGMwNDMtYmQzNC00OTk3LTljYmQtZjg4Nzg2NTVjZWVjIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwODEiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbImRlZmF1bHQtcm9sZXMtcG9jIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFkbWluLWFwaSI6eyJyb2xlcyI6WyJ1c2VyIl19LCJidXNpbmVzcy1hcGkiOnsicm9sZXMiOlsidXNlciJdfSwiYnVzaW5lc3MtZGV0YWlsLWFwaSI6eyJyb2xlcyI6WyJ1c2VyIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJVc2VyIFRlc3QiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZ2l2ZW5fbmFtZSI6IlVzZXIiLCJmYW1pbHlfbmFtZSI6IlRlc3QiLCJlbWFpbCI6InVzZXJAb2ZlcnRvLmlvIn0.AZf69u4aSCxYUFsWiQyTj2LBcxAKaFuyXZ8pjFtbnhwilfJQYDNlOTmeSwwoGA1XOSCQ2dxdxzyTl6ccARfo_E8TALV-FUQNQJ7q1ysVaxs4zepdAq1ZppiAaOxBwi1i-ixHJjDupvlprNBapoKf7JD7tf5X-mN6-qaQ2rueUJ14zWymiuCpsJnskZMZbmsoPwQC6z-z2lBnoRuxdxFuLw5nIKJjzaCUb86D-2kRfECge8mDU6_Gk_9dxphOSbqT3RAABgz7t2GzGVovGex7HA9MH1T5Y-QrqXFSnUYbVQDapEwnuHhBW_vd6Bl09PoWZZR6wZU1wG-UsGvfgyqmDQ",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/api/recomendations/001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"api",
+						"recomendations",
+						"001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
