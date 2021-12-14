@@ -31,7 +31,7 @@ public class RecomendationController {
 	@PreAuthorize("isAuthenticated()")
 	@RequestMapping(value = "/{code}", method = RequestMethod.GET)
     public List<Recomendation> getRecomendationsByProduct(@PathVariable String code) throws Exception {
-        log.info("Executing getRecomendationsByProduct");
+        log.info("Executing get Recomendations by Product");
                     	
         return recomendations.stream()
         		.filter(recomendation -> code.equals(recomendation.getProductCode()))
@@ -41,7 +41,7 @@ public class RecomendationController {
 	@PreAuthorize("hasAnyRole('admin','operator')")
 	@RequestMapping(value = "/{code}", method = RequestMethod.POST)
     public Recomendation addRecomendation(@PathVariable String code, @RequestBody String description) throws Exception {
-        log.info("Executing addRecomendation");
+        log.info("Executing Add Product Recomendation");
                     	
         Recomendation recomendation = new Recomendation(description, LocalDateTime.now(), code);
         
