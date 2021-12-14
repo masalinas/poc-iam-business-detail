@@ -28,6 +28,7 @@ public class RecomendationController {
 						  new Recomendation("Recomendation 02", LocalDateTime.now(), "001"),
 						  new Recomendation("Recomendation 03", LocalDateTime.now(), "003")));
 	
+	@PreAuthorize("isAuthenticated()")
 	@RequestMapping(value = "/{code}", method = RequestMethod.GET)
     public List<Recomendation> getRecomendationsByProduct(@PathVariable String code) throws Exception {
         log.info("Executing getRecomendationsByProduct");
