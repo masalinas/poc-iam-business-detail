@@ -25,10 +25,11 @@ public class KeycloakSecurityConfig extends KeycloakWebSecurityConfigurerAdapter
         super.configure(http);
         
         http.csrf().disable()
-        	.cors().disable()
-	            .authorizeRequests()
-	            .anyRequest()
-	            .authenticated();              
+        	.cors()
+        	.and()
+            .authorizeRequests()
+            .anyRequest()
+            .authenticated();              
     }
 
     // Disable default role prefix ROLE_
